@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "name": "hi",
+      "age": "5",
+      "course": "mnbv",
+      "mark": "96",
+      "id": "L7oWnPo7kns"
+    },
+    {
+      "name": "jhgf",
+      "age": "65",
+      "course": "nbvg",
+      "mark": "56",
+      "id": "R4p5Esc_5Yk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

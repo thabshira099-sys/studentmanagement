@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+
+    <body class="min-h-screen bg-gray-200 p-3  sm:p-4">
+        <header class=" flex justify-center flex-col">
+            <div class="bg-purple-700 rounded-lg sm:p-4 gap-2">
+                <h1 class="text-2xl sm:text-4xl text-white">Student Management System</h1>
+                <p class="text-white">Manage your students easily</p>
+            </div>
+        </header>
+        <div  class="mt-4 flex bg-white rounded-lg flex-col sm:p-4 gap-4 ">
+            <h1  class="text-purple-700 text-xl">Add  New Student</h1>
+            <form id="studentForm" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-16 ">
+
+
+                <input type="text" class="w-full border-1 rounded-sm" placeholder="Enter student name" id="addName">
+                <input type="text" class="w-full border-1 rounded-sm" placeholder="Enter age" id="addAge">
+                <input type="text" class="w-full border-1 rounded-sm" placeholder="Enter course" id="addCourse">
+                <input type="text" class="w-full border-1 rounded-sm" placeholder="Enter mark" id="addMark">
+                 <button type="submit" class="bg-purple-700 rounded-md mt-2 text-white p-2 sm:p-4 lg:px-7 " id="addButton">+Add Student</button>
+
+            </form>
+           
+
+
+        </div>
+        <div  id="gridChange" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 ">
+            <div class="bg-white py-10 rounded-md text-center" >Total Students
+                <h1 class="font-bold text-purple-700 text-3xl" id="addTotal">0</h1>
+            </div>
+            <div class="bg-white py-10 rounded-md text-center" >Average Marks
+                <h1 class="font-bold text-purple-700 text-3xl" id="addAverage">0</h1>
+            </div>
+            <div class="bg-white py-10 rounded-md text-center" >
+                Highest Mark 
+                <h1 class="font-bold text-purple-700 text-3xl" id="addHighest">0</h1>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg mt-4 sm:p-2 overflow-x-auto">
+            <h1 class="text-purple-700 text-sm lg:text-xl">Student Records</h1>
+            <table  class="w-full text-left border-collapse border-gray-300">
+                <thead>
+                    <tr class="bg-purple-100">
+                        <th class="p-3 text-purple-700 border border-gray-500 ">Name</th>
+                        <th class="p-3 text-purple-700 border border-gray-500">Age</th>
+                        <th class="p-3 text-purple-700 border border-gray-500">Course</th>
+                        <th class="p-3 text-purple-700 border border-gray-500 ">Mark</th>
+                        <th class="p-3 text-purple-700 border border-gray-500">Actions</th>
+                    </tr>
+    
+                </thead>
+                <tbody id="studentList">
+
+             <tr class="border border-gray-500">
+                <td colspan="5" class="text-center p-6 text-gray-500 border border-gray-500 ">
+                     No students found!
+              </td>
+                </tr>
+
+</tbody>
+            </table>
+        </div>
+
+
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
